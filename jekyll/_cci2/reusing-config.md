@@ -375,6 +375,7 @@ A parameter can have the following keys as immediate children:
 
 This section describes the types of parameters and their usage. The parameter types supported are:
 * string
+* environment variable
 * boolean
 * integer
 * enum
@@ -399,6 +400,11 @@ commands:
 ```
 
 Strings should be quoted if they would otherwise represent another type (such as boolean or number) or if they contain characters that have special meaning in YAML, particularly for the colon character. In all other instances, quotes are optional. Empty strings are treated as a falsy value in evaluation of `when` clauses, and all other strings are treated as truthy. Using an unquoted string value that YAML interprets as a boolean will result in a type error.
+
+#### Environment Variable
+{:.no_toc}
+
+etc.
 
 #### Boolean
 {:.no_toc}
